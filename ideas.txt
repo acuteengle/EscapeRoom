@@ -1,0 +1,44 @@
+[check] hidden links on words without a cursor to indicate
+
+you need to click on a coding of radio buttons
+
+you need to flip on a switch and type in the correct word somewhere
+
+you have a riddle so you have to enter the right word somewhere
+
+when you click on words they change colors and set a variable and you need 3 of them for something to happen
+
+[check] a picture shows up and you have to interpret the picture
+
+you have to click and drag a key to a key hole
+
+you have to enter the correct date for something
+
+buttons that say "look underneath" and then certain text shows up, but after you do something else, the text changes
+
+white text on a white background, but when you click a button, the background of that text changes colors (like a black light)
+
+have something show up only if they click and hold something
+
+have various colors and the numbers of things that color is a hint
+
+math puzzle with pictures and you don't know the value of the pictures
+
+word riddles
+
+find a key of hierogliphics to letters and then write a message in hierogliphics
+
+something to dial or find a phone number (various faces with phone numbers)
+
+directions of where someone went on a map and then the corresponding map
+
+screen shot of what the page/room should look like with many click and drags
+
+play sounds/music when something happens and loop it as a clue?
+
+timer and a count down
+
+a counter that occilates and the button only works when you click it when the timer is on a specific number
+
+
+roygbiv (letters in order) and that's the final clue

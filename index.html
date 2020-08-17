@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Welcome!</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="start_container">
+      <button id="start">Enter?</button>
+    </div>
+    <div id="section1">
+      <h2><span id="welcome">W</span>elcome to my game!</h2>
+      <p class="remove1">
+        To progress, you'll have to follow the clues that I have laid out for
+        you
+      </p>
+      <p class="remove1">
+        Your first clue is to click on the first place on this page where you
+        see the 4th letter from the end of the alphabet
+      </p>
+    </div>
+    <div id="section2">
+      <img
+        src="./imgs/flower_algebra2.jpg"
+        id="flower_image"
+        class="question2"
+      /><br />
+      <input type="number" id="flower_number" class="question2" />
+      <button id="flower_button" class="question2">Submit</button>
+      <p id="flower_answer_text"></p>
+    </div>
+    <div id="question3">
+      <hr />
+      <span>
+        Crap, I just dropped my keys. I know they are nearby... Can you help me
+        find them?
+      </span>
+      <img src="./imgs/key.jpg" id="key_image" draggable="true" />
+    </div>
+    <div id="question4">
+      <p>Thanks for helping me <span id="find">f</span>ind them!</p>
+      <p class="thanks">I wonder what these go to...</p>
+      <button id="explore_button" class="thanks">Explore the area?</button>
+    </div>
+    <div id="question5">
+      <hr />
+      <p id="searching">Searching...</p>
+      <p id="perfect" class="lock">
+        Ah perfect! Looks like there is a lock that you can use the key on!
+      </p>
+      <img id="lock1" class="lock" src="./imgs/lock1.png" />
+    </div>
+    <div id="question6">
+      <p>
+        The key disintegrates after it opens the lock. The
+        <span id="lock">l</span>ock falls off with a clank and the door slowly
+        creeks open
+      </p>
+      <button id="proceed">Proceed?</button>
+    </div>
+    <div id="question7">
+      <hr />
+      <p>
+        The door slams behind you and you try to open it, but it's no use! You
+        turn around and a candle lights up just enough for you to see a
+        parchment.
+      </p>
+      <p>
+        You have come this far. If you escape, you will be rewarded. But first,
+        you must answer these riddles to get out of this room!
+      </p>
+      <img src="./imgs/candle.gif" />
+      <p class="italic">
+        The ages of a father and son add up to 66. The father’s age is the son’s
+        age reversed. How old could they be?
+      </p>
+      <div>
+        <input type="checkbox" id="f51" />
+        <label for="f51">Father 51, son 15</label>
+      </div>
+      <div>
+        <input type="checkbox" id="f36" />
+        <label for="f36">Father 36, son 30</label>
+      </div>
+      <div>
+        <input type="checkbox" id="f60" />
+        <label for="f60">Father 60, son <span id="six">6</span></label>
+      </div>
+      <div>
+        <input type="checkbox" id="f45" />
+        <label for="f45">Father 45, son 21</label>
+      </div>
+      <div>
+        <input type="checkbox" id="f42" />
+        <label for="f42">Father 42, son 24</label>
+      </div>
+      <p class="italic">
+        In 2 years I will be twice as old as I was 5 years ago.” How old am I?
+      </p>
+      <input type="number" id="age" />
+      <p class="italic">
+        The day before yesterday I was 22, but next year I’ll be 25. What is my
+        birthday and when is the date of our conversation?
+      </p>
+      <input type="date" id="birthdate" min="2018-01-01" max="2018-12-31" />
+      <p class="italic">
+        Mary is 54 years old, and her mother is 80. How many years ago was her
+        mother three times the age of her daughter Mary?
+      </p>
+      <input type="number" id="yearsAgo" />
+      <br /><br />
+      <button id="candle">Shout the answers at the candle</button>
+    </div>
+    <div id="question8">
+      <p>
+        One of the stone walls opens up to reveals a hidden passageway. You
+        climb through the opening and find yourself in another room and behold!
+        There is a treasure chest!
+      </p>
+      <img src="./imgs/treasurechest.jpg" />
+      <p>
+        Etched into the wood is a message that says "<i
+          >You must enter the rainbow in order</i
+        >". The padlock on the chest allows you to enter a combo of 7 letters.
+      </p>
+      <input type="text" maxlength="7" id="rainbow" />
+      <button id="chest">Try to open the chest</button>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,63 @@
+body {
+    font-family: Verdana;
+    background-color: #A25656;
+    text-align: center;
+}
+
+img {
+    margin: 10px;
+    border-radius: 10px;
+}
+
+#start_container {
+    overflow: hidden;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#section1, #section2, #question3, #question4, #question5, #question6, #question7, #question8 {
+    display: none;
+}
+
+#flower_image {
+    width: 400px;
+}
+
+#key_image {
+    width: 200px;
+    opacity: 0.0;
+}
+
+#find {
+    color: gold;
+}
+
+#pic_options {
+    display: flex;
+    justify-content: space-between;
+}
+
+.lock {
+    display: none;
+}
+
+#lock1 {
+    width: 400px;
+}
+
+#lock {
+    color: darkorange;
+}
+
+.italic {
+    font-style: italic;
+}
+
+#six {
+    color: lightblue;
+}
