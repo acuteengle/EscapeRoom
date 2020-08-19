@@ -24,55 +24,56 @@
       <img
         src="./imgs/flower_algebra2.jpg"
         id="flower_image"
-        class="question2"
+        class="remove2"
       /><br />
-      <input type="number" id="flower_number" class="question2" />
-      <button id="flower_button" class="question2">Submit</button>
+      <input type="number" id="flower_number" class="remove2" />
+      <button id="flower_button" class="remove2">Submit</button>
       <p id="flower_answer_text"></p>
     </div>
-    <div id="question3">
-      <hr />
-      <span>
-        Crap, I just dropped my keys. I know they are nearby... Can you help me
-        find them?
-      </span>
+    <div id="section3">
+      <p class="remove3">
+        I seem to have lost my keys... I know that they are nearby... Can you
+        help me find them?
+      </p>
       <img src="./imgs/key.jpg" id="key_image" draggable="true" />
+      <div id="section4">
+        <p>Thanks for helping me <span id="find">f</span>ind them!</p>
+        <p class="search">I wonder what these go to...</p>
+        <button id="explore_button" class="search">Explore the area?</button>
+      </div>
     </div>
-    <div id="question4">
-      <p>Thanks for helping me <span id="find">f</span>ind them!</p>
-      <p class="thanks">I wonder what these go to...</p>
-      <button id="explore_button" class="thanks">Explore the area?</button>
-    </div>
-    <div id="question5">
-      <hr />
+    <div id="section5">
       <p id="searching">Searching...</p>
-      <p id="perfect" class="lock">
-        Ah perfect! Looks like there is a lock that you can use the key on!
+      <p class="lock">
+        Ah perfect<span class="purple">!</span> Looks like there is a lock that
+        you can use the key on!
       </p>
       <img id="lock1" class="lock" src="./imgs/lock1.png" />
     </div>
-    <div id="question6">
+    <div id="section6">
       <p>
         The key disintegrates after it opens the lock. The
-        <span id="lock">l</span>ock falls off with a clank and the door slowly
-        creeks open
+        <span id="lock">l</span>ock falls off with a clank and the door opens
       </p>
       <button id="proceed">Proceed?</button>
     </div>
-    <div id="question7">
+    <div id="section7">
+      <p>
+        You go inside and the door slams behind you. You attempt to open it, but
+        the door seems to have locked itself agai<span class="indigo">n</span>.
+      </p>
+      <div class="remove7">
+        <div class="candle">
+          <img src="./imgs/candle.gif" />
+          <span>
+            A candle lights up just enough for you to see a parchment with a
+            bunch of age riddles.
+          </span>
+        </div>
+      </div>
       <hr />
-      <p>
-        The door slams behind you and you try to open it, but it's no use! You
-        turn around and a candle lights up just enough for you to see a
-        parchment.
-      </p>
-      <p>
-        You have come this far. If you escape, you will be rewarded. But first,
-        you must answer these riddles to get out of this room!
-      </p>
-      <img src="./imgs/candle.gif" />
       <p class="italic">
-        The ages of a father and son add up to 66. The father’s age is the son’s
+        The ages of a father and son add up to 66. The father's age is the son's
         age reversed. How old could they be?
       </p>
       <div>
@@ -84,48 +85,82 @@
         <label for="f36">Father 36, son 30</label>
       </div>
       <div>
-        <input type="checkbox" id="f60" />
-        <label for="f60">Father 60, son <span id="six">6</span></label>
-      </div>
-      <div>
         <input type="checkbox" id="f45" />
-        <label for="f45">Father 45, son 21</label>
+        <label for="f45">Father <span id="four">4</span>5, son 21</label>
       </div>
       <div>
         <input type="checkbox" id="f42" />
         <label for="f42">Father 42, son 24</label>
       </div>
-      <p class="italic">
-        In 2 years I will be twice as old as I was 5 years ago.” How old am I?
-      </p>
-      <input type="number" id="age" />
-      <p class="italic">
-        The day before yesterday I was 22, but next year I’ll be 25. What is my
-        birthday and when is the date of our conversation?
-      </p>
-      <input type="date" id="birthdate" min="2018-01-01" max="2018-12-31" />
-      <p class="italic">
-        Mary is 54 years old, and her mother is 80. How many years ago was her
-        mother three times the age of her daughter Mary?
-      </p>
-      <input type="number" id="yearsAgo" />
-      <br /><br />
-      <button id="candle">Shout the answers at the candle</button>
+      <div class="remove7">
+        <hr />
+        <p class="italic">
+          In 2 years Mary will be twice as old as she was 5 years ago.
+        </p>
+        <label for="age">How old is Mary?</label>
+        <input type="number" id="age" />
+        <hr />
+        <p class="italic">
+          The year is 2019. The day before yesterday I was 22, but next year
+          I’ll be 25.
+        </p>
+        <p class="italic">
+          What is my birthdate and when is the date of our conversation?
+        </p>
+        <label for="conversation">Date of conversation: </label>
+        <input
+          type="date"
+          id="conversation"
+          min="2018-01-01"
+          max="2019-12-31"
+        />
+        <br /><br />
+        <label for="birthdate">Birthdate: </label>
+        <input type="date" id="birthdate" min="2018-01-01" max="2019-12-31" />
+        <hr />
+        <p class="italic">
+          Mary is 54 years old, and her mother is 80.
+        </p>
+        <p class="italic">
+          How many years ago was her mother three times the age of her daughter
+          Mary?
+        </p>
+        <label for="yearsAgo">Answer: </label>
+        <input type="number" id="yearsAgo" />
+        <hr />
+        <button id="candle">Shout the answers at the candle</button>
+        <p id="riddle_text"></p>
+      </div>
     </div>
-    <div id="question8">
+    <div id="section8">
       <p>
         One of the stone walls opens up to reveals a hidden passageway. You
         climb through the opening and find yourself in another room and behold!
         There is a treasure chest!
       </p>
-      <img src="./imgs/treasurechest.jpg" />
-      <p>
+      <img id="treasure" src="./imgs/treasurechest.jpg" class="remove8" />
+      <p class="remove8">
         Etched into the wood is a message that says "<i
           >You must enter the rainbow in order</i
-        >". The padlock on the chest allows you to enter a combo of 7 letters.
+        >". The padlock on the chest allows you to enter a combo of 7
+        characters.
       </p>
-      <input type="text" maxlength="7" id="rainbow" />
-      <button id="chest">Try to open the chest</button>
+      <label for="rainbow" class="remove8">Enter combo: </label>
+      <input type="text" maxlength="7" id="rainbow" class="remove8" />
+      <br /><br />
+      <button id="chest" class="remove8">Try to open the chest</button>
+      <p id="chest_text" class="remove8"></p>
+    </div>
+    <div id="section9">
+      <p>
+        Congratulations! You have made it through the entire game! You are
+        rewarded with gold and riches! Enjoy your earnings, but remember not to
+        spend it all in one place! I hope you enjoyed the riddles and
+        challenges!
+      </p>
+      <img id="gold" src="./imgs/gold.png" />
+      <br />
+      <button id="play_again">Play again?</button>
     </div>
     <script src="./script.js"></script>
   </body>
