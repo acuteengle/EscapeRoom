@@ -118,7 +118,7 @@ document.getElementById("candle").addEventListener("click", () => {
 
     let passed = (f51 && !f36 && !f45 && f42)
         && (age == 12)
-        && (conversation == "2019-01-01" && birthdate == "2018-12-31")
+        && (conversation == "2019-01-01" && birthdate == "1995-12-31")
         && (yearsAgo == 41)
 
     if (passed) {
